@@ -39,7 +39,7 @@ const About = () => {
           >
             <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Our Story</h2>
             <h3 className="text-3xl md:text-4xl font-extrabold text-slate-900">
-              Transforming Education in Patna Since 2010
+              Transforming Education in Patna Since 2024
             </h3>
             <p className="text-slate-600 leading-relaxed">
               Revolution Classes was founded with a single mission: to provide high-quality, affordable education to students in Bihar. We believe that every student has the potential to excel if given the right guidance and environment.

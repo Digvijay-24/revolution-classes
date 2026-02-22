@@ -75,6 +75,43 @@ const Hero = () => {
           </motion.div>
 
         </div>
+
+        {/* Why Choose Us Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-24 pt-16 border-t border-slate-100"
+        >
+          <div className="text-center mb-12">
+            <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-4">Why Choose Us?</h2>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+              The Revolution <span className="text-secondary">Advantage</span>
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: 'Result Oriented', desc: 'Improvement & Result Oriented Plans' },
+              { title: 'Parent Feedback', desc: 'Regular Feedback to Parents' },
+              { title: 'Modern Facilities', desc: 'Smart Class, Computer Class' },
+              { title: 'Regular Testing', desc: 'Regular Test Series' },
+              { title: 'Focused Material', desc: 'Highly Focused Study Material' },
+              { title: 'Free Library', desc: 'Free Library facilities for students' },
+              { title: '7 Day Demo', desc: '7 Day Demo Classes Free' },
+              { title: 'Expert Guidance', desc: 'Mentorship by Prof. R.K. Singh' },
+            ].map((feature, i) => (
+              <div key={i} className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-white shadow-sm hover:shadow-md transition-all group">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                  <CheckCircle size={20} />
+                </div>
+                <h4 className="font-bold text-slate-900 mb-2">{feature.title}</h4>
+                <p className="text-slate-600 text-sm leading-relaxed">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
